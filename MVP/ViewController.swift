@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  MVVMDemo
+//  MVP
 //
 //  Created by DMR on 2019/11/28.
 //  Copyright © 2019 Alistar. All rights reserved.
