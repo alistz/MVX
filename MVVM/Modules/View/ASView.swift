@@ -42,16 +42,25 @@ class ASView: UIView {
     
     open func show(_ vm: ASViewModel) {
         self.vm = vm
-        kvoController.observe(vm, keyPath: "msg", options: [.new
-            , .initial]) { (observer, object, change) in
-            self.contentLbl.text = change[.newKey] as? String
-        }
+        // 添加观察者
+        vm.addObserver(self, forKeyPath: "msg", options: [.initial, .new], context: nil)
+        
     }
 
     @objc private func onButtonAction() {
         
         vm.viewModelButtonClicked()
     }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "msg" {
+            guard let change = change else {
+                return
+            }
+            self.contentLbl.text = change[.newKey] as? String
+        }
+    }
+    
 
 
 }

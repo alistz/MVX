@@ -11,8 +11,6 @@
 		C6BE7DCA238F833F00BE77CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BE7DC8238F833F00BE77CC /* Main.storyboard */; };
 		C6BE7DCC238F834100BE77CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BE7DCB238F834100BE77CC /* Assets.xcassets */; };
 		C6BE7DCF238F834100BE77CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BE7DCD238F834100BE77CC /* LaunchScreen.storyboard */; };
-		C6BE7DDC238F835700BE77CC /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BE7DD9238F835700BE77CC /* NSObject+FBKVOController.m */; };
-		C6BE7DDD238F835700BE77CC /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BE7DDA238F835700BE77CC /* FBKVOController.m */; };
 		C6BE7DDF238F83AD00BE77CC /* ASViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BE7DDE238F83AD00BE77CC /* ASViewController.swift */; };
 		C6BE7DE7238F845900BE77CC /* ASViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BE7DE6238F845900BE77CC /* ASViewModel.swift */; };
 		C6BE7DEA238F852100BE77CC /* ASModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BE7DE9238F852100BE77CC /* ASModel.swift */; };
@@ -34,16 +32,10 @@
 		C6BE7DCB238F834100BE77CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6BE7DCE238F834100BE77CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6BE7DD0238F834100BE77CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6BE7DD7238F835700BE77CC /* KVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOController.h; sourceTree = "<group>"; };
-		C6BE7DD8238F835700BE77CC /* FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBKVOController.h; sourceTree = "<group>"; };
-		C6BE7DD9238F835700BE77CC /* NSObject+FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FBKVOController.m"; sourceTree = "<group>"; };
-		C6BE7DDA238F835700BE77CC /* FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBKVOController.m; sourceTree = "<group>"; };
-		C6BE7DDB238F835700BE77CC /* NSObject+FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FBKVOController.h"; sourceTree = "<group>"; };
 		C6BE7DDE238F83AD00BE77CC /* ASViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASViewController.swift; sourceTree = "<group>"; };
 		C6BE7DE6238F845900BE77CC /* ASViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASViewModel.swift; sourceTree = "<group>"; };
 		C6BE7DE9238F852100BE77CC /* ASModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASModel.swift; sourceTree = "<group>"; };
 		C6BE7DEB238F94D200BE77CC /* ASView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASView.swift; sourceTree = "<group>"; };
-		C6BE7DF3238FA00400BE77CC /* SwfitOC-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwfitOC-Header.h"; sourceTree = "<group>"; };
 		C6BE7DF8238FCBE700BE77CC /* MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BE7DFA238FCBE700BE77CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6BE7E01238FCBE700BE77CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -95,28 +87,14 @@
 		C6BE7DC1238F833F00BE77CC /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				C6BE7DD6238F835700BE77CC /* FBKVOController */,
 				C6BE7DE0238F83C700BE77CC /* Modules */,
 				C6BE7DC2238F833F00BE77CC /* AppDelegate.swift */,
 				C6BE7DC8238F833F00BE77CC /* Main.storyboard */,
 				C6BE7DCB238F834100BE77CC /* Assets.xcassets */,
 				C6BE7DCD238F834100BE77CC /* LaunchScreen.storyboard */,
 				C6BE7DD0238F834100BE77CC /* Info.plist */,
-				C6BE7DF3238FA00400BE77CC /* SwfitOC-Header.h */,
 			);
 			path = MVVM;
-			sourceTree = "<group>";
-		};
-		C6BE7DD6238F835700BE77CC /* FBKVOController */ = {
-			isa = PBXGroup;
-			children = (
-				C6BE7DD7238F835700BE77CC /* KVOController.h */,
-				C6BE7DD8238F835700BE77CC /* FBKVOController.h */,
-				C6BE7DD9238F835700BE77CC /* NSObject+FBKVOController.m */,
-				C6BE7DDA238F835700BE77CC /* FBKVOController.m */,
-				C6BE7DDB238F835700BE77CC /* NSObject+FBKVOController.h */,
-			);
-			path = FBKVOController;
 			sourceTree = "<group>";
 		};
 		C6BE7DE0238F83C700BE77CC /* Modules */ = {
@@ -306,11 +284,9 @@
 			files = (
 				C6BE7DE7238F845900BE77CC /* ASViewModel.swift in Sources */,
 				C6BE7DDF238F83AD00BE77CC /* ASViewController.swift in Sources */,
-				C6BE7DDC238F835700BE77CC /* NSObject+FBKVOController.m in Sources */,
 				C6BE7DEA238F852100BE77CC /* ASModel.swift in Sources */,
 				C6BE7DEC238F94D200BE77CC /* ASView.swift in Sources */,
 				C6BE7DC3238F833F00BE77CC /* AppDelegate.swift in Sources */,
-				C6BE7DDD238F835700BE77CC /* FBKVOController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,9 +465,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alistar.MVVMDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alistar.mvvm;
 				PRODUCT_NAME = MVVM;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MVVM/SwfitOC-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -508,9 +484,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alistar.MVVMDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alistar.mvvm;
 				PRODUCT_NAME = MVVM;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/MVVM/SwfitOC-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -522,11 +498,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MVP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alistar.MVP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alistar.mvp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -539,11 +516,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MVP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alistar.MVP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alistar.mvp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
