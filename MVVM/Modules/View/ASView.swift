@@ -11,7 +11,7 @@ import UIKit
 class ASView: UIView {
 
     lazy var contentLbl: UILabel = {
-        let lbl = UILabel(frame: CGRect(x: 0, y: 100, width: 300, height: 30))
+        let lbl = UILabel(frame: CGRect(x: 0, y: 300, width: UIScreen.main.bounds.width, height: 30))
         lbl.textAlignment = .center
         lbl.textColor = UIColor.black
         lbl.text = "我是来打酱油的吗～～～"
@@ -19,7 +19,7 @@ class ASView: UIView {
     }()
     
     lazy var printBtn: UIButton = {
-        let btn = UIButton(frame: CGRect(x: 100, y: 200, width: 100, height: 50))
+        let btn = UIButton(frame: CGRect(x: 15, y: 400, width: UIScreen.main.bounds.width - 30, height: 44))
         btn.setTitle("我是🔘按钮", for: .normal)
         btn.backgroundColor = UIColor.lightGray
         btn.addTarget(self, action: #selector(onButtonAction), for: .touchUpInside)
@@ -48,7 +48,6 @@ class ASView: UIView {
     }
 
     @objc private func onButtonAction() {
-        
         vm.viewModelButtonClicked()
     }
     
